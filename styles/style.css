@@ -16,6 +16,7 @@ p{
 }
 main{
     align-items: center;
+    overflow-x: hidden
 }
 .hero-area{
     display: flex;
@@ -120,7 +121,8 @@ Highlights styles end
 }
 .highlights{
     margin-top: 70px; 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 1170px;
 }
 .video-content{
@@ -177,12 +179,20 @@ Highlights styles end
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
+    .top-player-img img {
+        width: 100%;
+        padding-top: 466px;
+    }
     .players-list{
         grid-template-columns: repeat(1, 1fr);
     }
     .video-content{
         padding-left: 2%;
         width: 300px;
+    }
+    .footer-logo img {
+        width: 316.87px !important;
+        height: 100px !important;
     }
 }
 
