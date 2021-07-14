@@ -19,7 +19,6 @@ main{
 }
 .hero-area{
     display: flex;
-    /*width: 100%;*/
     height: 677px;
     left: 0px;
     top: 0px;
@@ -41,6 +40,10 @@ main{
     width: 100%;
     padding-top: 10%; 
 }
+.top-player-img img:hover {
+    transform: rotate(-30deg) translateX(180px);
+    transition: transform 0.3s ease-in;
+}
 .head-small-text {
     padding-bottom: 50px;
 }
@@ -58,6 +61,10 @@ main{
 }
 .top-heading {
     color: #FFFFFF;
+}
+.top-heading:hover {
+    transform: rotate(30deg) translateX(180px);
+    transition: transform 0.3s ease-in;
 }
 .fa-long-arrow-right{
     position: static;
