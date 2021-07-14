@@ -19,7 +19,7 @@ main{
 }
 .hero-area{
     display: flex;
-    width: 100%;
+    /*width: 100%;*/
     height: 677px;
     left: 0px;
     top: 0px;
@@ -28,13 +28,9 @@ main{
     background: #2D25A0;
 }
 .top-player-img {
-    /*position: absolute;*/
     max-width: 556.01px;
     max-height: 438px;
-    /*left: 1299.01px;*/
     padding-top: 70px;
-    /*padding-bottom: 86px;*/
-    /*background: url(1648334-world-cup-football-player-kick-off-football-kick-football-png-980_772_preview.png);*/
 }
 .focus-content {
     width: 50%;
@@ -110,10 +106,18 @@ main{
 /* ------------------------
 Highlights styles end
 --------------------- */
-.highlights-title {
-    font-size: 48px;
-    color: #0A0826;
-    font-weight: bold;
+.copa-america-final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.highlights{
+    margin-top: 70px; 
+    display: flex;
+    width: 1170px;
+}
+.video-content{
+    padding-left: 2%;
 }
 /* ------------------------
 Highlights styles end
@@ -146,7 +150,7 @@ Highlights styles end
     height: 36px;
     border: 1px solid #909090;
     border-radius: 100%;
-    margin-right: 7px; /*space between*/
+    margin-right: 7px; 
     background: #e9e9eb;
 
 } 
@@ -168,6 +172,10 @@ Highlights styles end
 @media only screen and (max-width:688px) {
     .players-list{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .video-content{
+        padding-left: 2%;
+        width: 300px;
     }
 }
 
